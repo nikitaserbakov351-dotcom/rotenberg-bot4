@@ -1,11 +1,5 @@
 [build]
 builder = "nixpacks"
-watchPatterns = ["requirements.txt", "runtime.txt"]
 
 [deploy]
 startCommand = "python main.py"
-healthcheckPath = "/"
-healthcheckTimeout = 60
-
-[variables]
-RAILWAY_ENVIRONMENT = "production"
